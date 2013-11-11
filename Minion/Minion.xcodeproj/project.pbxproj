@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7E80684182D658F00A2DA9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C5D008182C5001002D1833 /* XCTest.framework */; };
+		D7E80685182D658F00A2DA9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C5CFF3182C5001002D1833 /* Cocoa.framework */; };
+		D7E80688182D658F00A2DA9E /* libMinion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E80677182D658F00A2DA9E /* libMinion.a */; };
+		D7E80697182D659E00A2DA9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C5CFF6182C5001002D1833 /* Foundation.framework */; };
+		D7E80698182D65B200A2DA9E /* MinionServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D792D5BB182D426B00548710 /* MinionServer.m */; };
+		D7E80699182D65B200A2DA9E /* MinionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = D792D5B5182D264E00548710 /* MinionParams.m */; };
+		D7E8069A182D65B200A2DA9E /* MinionStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D76A02E9182C567300DCB576 /* MinionStream.m */; };
+		D7E8069B182D65B200A2DA9E /* MinionClosingStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D76A02FA182C5C0C00DCB576 /* MinionClosingStream.m */; };
+		D7E8069C182D65B200A2DA9E /* MinionWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D76A02F5182C5A2000DCB576 /* MinionWriteStream.m */; };
+		D7E8069D182D65B200A2DA9E /* MinionIncomingStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D76A02F0182C584800DCB576 /* MinionIncomingStream.m */; };
+		D7E8069E182D65B200A2DA9E /* MinionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C5D059182C54D6002D1833 /* MinionRequest.m */; };
+		D7E8069F182D65B200A2DA9E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C5D052182C5165002D1833 /* GCDAsyncSocket.m */; };
+		D7E806A0182D65C900A2DA9E /* MinionServer.h in Headers */ = {isa = PBXBuildFile; fileRef = D792D5BA182D426B00548710 /* MinionServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E806A1182D65C900A2DA9E /* MinionParams.h in Headers */ = {isa = PBXBuildFile; fileRef = D792D5B4182D264E00548710 /* MinionParams.h */; };
+		D7E806A2182D65C900A2DA9E /* MinionStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D76A02E8182C567300DCB576 /* MinionStream.h */; };
+		D7E806A3182D65C900A2DA9E /* MinionClosingStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D76A02F9182C5C0C00DCB576 /* MinionClosingStream.h */; };
+		D7E806A4182D65C900A2DA9E /* MinionWriteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D76A02F4182C5A2000DCB576 /* MinionWriteStream.h */; };
+		D7E806A5182D65C900A2DA9E /* MinionIncomingStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D76A02EF182C584800DCB576 /* MinionIncomingStream.h */; };
+		D7E806A6182D65C900A2DA9E /* MinionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C5D058182C54D6002D1833 /* MinionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E806A7182D65C900A2DA9E /* Minion.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C5D000182C5001002D1833 /* Minion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E806A8182D65C900A2DA9E /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C5D051182C5165002D1833 /* GCDAsyncSocket.h */; };
+		D7E806A9182D65C900A2DA9E /* MinionConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C5D056182C51EC002D1833 /* MinionConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E806B1182D673700A2DA9E /* Minion-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D7E806B0182D673700A2DA9E /* Minion-Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7E80686182D658F00A2DA9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7C5CFE7182C5001002D1833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E80676182D658F00A2DA9E;
+			remoteInfo = Minion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D76A02E6182C561000DCB576 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D76A02E8182C567300DCB576 /* MinionStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionStream.h; sourceTree = "<group>"; };
+		D76A02E9182C567300DCB576 /* MinionStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionStream.m; sourceTree = "<group>"; };
+		D76A02EC182C568D00DCB576 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		D76A02EF182C584800DCB576 /* MinionIncomingStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionIncomingStream.h; sourceTree = "<group>"; };
+		D76A02F0182C584800DCB576 /* MinionIncomingStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionIncomingStream.m; sourceTree = "<group>"; };
+		D76A02F4182C5A2000DCB576 /* MinionWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionWriteStream.h; sourceTree = "<group>"; };
+		D76A02F5182C5A2000DCB576 /* MinionWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionWriteStream.m; sourceTree = "<group>"; };
+		D76A02F9182C5C0C00DCB576 /* MinionClosingStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionClosingStream.h; sourceTree = "<group>"; };
+		D76A02FA182C5C0C00DCB576 /* MinionClosingStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionClosingStream.m; sourceTree = "<group>"; };
+		D792D5B4182D264E00548710 /* MinionParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionParams.h; sourceTree = "<group>"; };
+		D792D5B5182D264E00548710 /* MinionParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionParams.m; sourceTree = "<group>"; };
+		D792D5BA182D426B00548710 /* MinionServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionServer.h; sourceTree = "<group>"; };
+		D792D5BB182D426B00548710 /* MinionServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionServer.m; sourceTree = "<group>"; };
+		D7C5CFF3182C5001002D1833 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D7C5CFF6182C5001002D1833 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D7C5CFF7182C5001002D1833 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D7C5CFF8182C5001002D1833 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D7C5CFFB182C5001002D1833 /* Minion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Minion-Info.plist"; sourceTree = "<group>"; };
+		D7C5CFFD182C5001002D1833 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7C5CFFF182C5001002D1833 /* Minion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Minion-Prefix.pch"; sourceTree = "<group>"; };
+		D7C5D000182C5001002D1833 /* Minion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Minion.h; sourceTree = "<group>"; };
+		D7C5D008182C5001002D1833 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D7C5D051182C5165002D1833 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = GCDAsyncSocket/GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
+		D7C5D052182C5165002D1833 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = GCDAsyncSocket/GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		D7C5D056182C51EC002D1833 /* MinionConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinionConstants.h; sourceTree = "<group>"; };
+		D7C5D058182C54D6002D1833 /* MinionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinionRequest.h; sourceTree = "<group>"; };
+		D7C5D059182C54D6002D1833 /* MinionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinionRequest.m; sourceTree = "<group>"; };
+		D7C5D05D182C558E002D1833 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D7E80677182D658F00A2DA9E /* libMinion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMinion.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E80683182D658F00A2DA9E /* MinionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E806B0182D673700A2DA9E /* Minion-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Minion-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7E80674182D658F00A2DA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E80697182D659E00A2DA9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E80680182D658F00A2DA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E80685182D658F00A2DA9E /* Cocoa.framework in Frameworks */,
+				D7E80684182D658F00A2DA9E /* XCTest.framework in Frameworks */,
+				D7E80688182D658F00A2DA9E /* libMinion.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D76A02EE182C582F00DCB576 /* Incoming */ = {
+			isa = PBXGroup;
+			children = (
+				D76A02EF182C584800DCB576 /* MinionIncomingStream.h */,
+				D76A02F0182C584800DCB576 /* MinionIncomingStream.m */,
+			);
+			name = Incoming;
+			sourceTree = "<group>";
+		};
+		D76A02F3182C59E500DCB576 /* Stdin */ = {
+			isa = PBXGroup;
+			children = (
+				D76A02F4182C5A2000DCB576 /* MinionWriteStream.h */,
+				D76A02F5182C5A2000DCB576 /* MinionWriteStream.m */,
+			);
+			name = Stdin;
+			sourceTree = "<group>";
+		};
+		D76A02F8182C5BE700DCB576 /* Closing */ = {
+			isa = PBXGroup;
+			children = (
+				D76A02F9182C5C0C00DCB576 /* MinionClosingStream.h */,
+				D76A02FA182C5C0C00DCB576 /* MinionClosingStream.m */,
+			);
+			name = Closing;
+			sourceTree = "<group>";
+		};
+		D792D5B3182D263F00548710 /* Params */ = {
+			isa = PBXGroup;
+			children = (
+				D792D5B4182D264E00548710 /* MinionParams.h */,
+				D792D5B5182D264E00548710 /* MinionParams.m */,
+			);
+			name = Params;
+			sourceTree = "<group>";
+		};
+		D792D5B9182D426400548710 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				D792D5BA182D426B00548710 /* MinionServer.h */,
+				D792D5BB182D426B00548710 /* MinionServer.m */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		D7C5CFE6182C5001002D1833 = {
+			isa = PBXGroup;
+			children = (
+				D7C5CFF9182C5001002D1833 /* Minion */,
+				D7C5CFF2182C5001002D1833 /* Frameworks */,
+				D7C5CFF1182C5001002D1833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7C5CFF1182C5001002D1833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E80677182D658F00A2DA9E /* libMinion.a */,
+				D7E80683182D658F00A2DA9E /* MinionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7C5CFF2182C5001002D1833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D76A02EC182C568D00DCB576 /* CoreServices.framework */,
+				D76A02E6182C561000DCB576 /* Security.framework */,
+				D7C5D05D182C558E002D1833 /* CoreFoundation.framework */,
+				D7C5CFF3182C5001002D1833 /* Cocoa.framework */,
+				D7C5D008182C5001002D1833 /* XCTest.framework */,
+				D7C5CFF5182C5001002D1833 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7C5CFF5182C5001002D1833 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7C5CFF6182C5001002D1833 /* Foundation.framework */,
+				D7C5CFF7182C5001002D1833 /* CoreData.framework */,
+				D7C5CFF8182C5001002D1833 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D7C5CFF9182C5001002D1833 /* Minion */ = {
+			isa = PBXGroup;
+			children = (
+				D792D5B9182D426400548710 /* Server */,
+				D792D5B3182D263F00548710 /* Params */,
+				D7C5D05C182C553A002D1833 /* Stream */,
+				D7C5D057182C54C2002D1833 /* Request */,
+				D7C5D000182C5001002D1833 /* Minion.h */,
+				D7C5CFFA182C5001002D1833 /* Supporting Files */,
+			);
+			path = Minion;
+			sourceTree = "<group>";
+		};
+		D7C5CFFA182C5001002D1833 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7C5CFFB182C5001002D1833 /* Minion-Info.plist */,
+				D7C5CFFC182C5001002D1833 /* InfoPlist.strings */,
+				D7C5CFFF182C5001002D1833 /* Minion-Prefix.pch */,
+				D7C5D055182C516B002D1833 /* GCDAsyncSocket */,
+				D7C5D056182C51EC002D1833 /* MinionConstants.h */,
+				D7E806B0182D673700A2DA9E /* Minion-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7C5D055182C516B002D1833 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D7C5D051182C5165002D1833 /* GCDAsyncSocket.h */,
+				D7C5D052182C5165002D1833 /* GCDAsyncSocket.m */,
+			);
+			name = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
+		D7C5D057182C54C2002D1833 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D7C5D058182C54D6002D1833 /* MinionRequest.h */,
+				D7C5D059182C54D6002D1833 /* MinionRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		D7C5D05C182C553A002D1833 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				D76A02E8182C567300DCB576 /* MinionStream.h */,
+				D76A02E9182C567300DCB576 /* MinionStream.m */,
+				D76A02F8182C5BE700DCB576 /* Closing */,
+				D76A02F3182C59E500DCB576 /* Stdin */,
+				D76A02EE182C582F00DCB576 /* Incoming */,
+			);
+			name = Stream;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D7E80675182D658F00A2DA9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E806A0182D65C900A2DA9E /* MinionServer.h in Headers */,
+				D7E806A6182D65C900A2DA9E /* MinionRequest.h in Headers */,
+				D7E806A7182D65C900A2DA9E /* Minion.h in Headers */,
+				D7E806A9182D65C900A2DA9E /* MinionConstants.h in Headers */,
+				D7E806A1182D65C900A2DA9E /* MinionParams.h in Headers */,
+				D7E806A2182D65C900A2DA9E /* MinionStream.h in Headers */,
+				D7E806A3182D65C900A2DA9E /* MinionClosingStream.h in Headers */,
+				D7E806B1182D673700A2DA9E /* Minion-Prefix.pch in Headers */,
+				D7E806A4182D65C900A2DA9E /* MinionWriteStream.h in Headers */,
+				D7E806A5182D65C900A2DA9E /* MinionIncomingStream.h in Headers */,
+				D7E806A8182D65C900A2DA9E /* GCDAsyncSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D7E80676182D658F00A2DA9E /* Minion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E80691182D658F00A2DA9E /* Build configuration list for PBXNativeTarget "Minion" */;
+			buildPhases = (
+				D7E80673182D658F00A2DA9E /* Sources */,
+				D7E80674182D658F00A2DA9E /* Frameworks */,
+				D7E80675182D658F00A2DA9E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Minion;
+			productName = Minion;
+			productReference = D7E80677182D658F00A2DA9E /* libMinion.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D7E80682182D658F00A2DA9E /* MinionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E80694182D658F00A2DA9E /* Build configuration list for PBXNativeTarget "MinionTests" */;
+			buildPhases = (
+				D7E8067F182D658F00A2DA9E /* Sources */,
+				D7E80680182D658F00A2DA9E /* Frameworks */,
+				D7E80681182D658F00A2DA9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7E80687182D658F00A2DA9E /* PBXTargetDependency */,
+			);
+			name = MinionTests;
+			productName = MinionTests;
+			productReference = D7E80683182D658F00A2DA9E /* MinionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7C5CFE7182C5001002D1833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Nudge;
+			};
+			buildConfigurationList = D7C5CFEA182C5001002D1833 /* Build configuration list for PBXProject "Minion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7C5CFE6182C5001002D1833;
+			productRefGroup = D7C5CFF1182C5001002D1833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7E80676182D658F00A2DA9E /* Minion */,
+				D7E80682182D658F00A2DA9E /* MinionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7E80681182D658F00A2DA9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7E80673182D658F00A2DA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E80698182D65B200A2DA9E /* MinionServer.m in Sources */,
+				D7E80699182D65B200A2DA9E /* MinionParams.m in Sources */,
+				D7E8069A182D65B200A2DA9E /* MinionStream.m in Sources */,
+				D7E8069B182D65B200A2DA9E /* MinionClosingStream.m in Sources */,
+				D7E8069C182D65B200A2DA9E /* MinionWriteStream.m in Sources */,
+				D7E8069D182D65B200A2DA9E /* MinionIncomingStream.m in Sources */,
+				D7E8069E182D65B200A2DA9E /* MinionRequest.m in Sources */,
+				D7E8069F182D65B200A2DA9E /* GCDAsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E8067F182D658F00A2DA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7E80687182D658F00A2DA9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E80676182D658F00A2DA9E /* Minion */;
+			targetProxy = D7E80686182D658F00A2DA9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7C5CFFC182C5001002D1833 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7C5CFFD182C5001002D1833 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7C5D016182C5001002D1833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7C5D017182C5001002D1833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7E80692182D658F00A2DA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Minion/Minion-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7E80693182D658F00A2DA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Minion/Minion-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7E80695182D658F00A2DA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Minion/Minion-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MinionTests/MinionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D7E80696182D658F00A2DA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Minion/Minion-Prefix.pch";
+				INFOPLIST_FILE = "MinionTests/MinionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7C5CFEA182C5001002D1833 /* Build configuration list for PBXProject "Minion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C5D016182C5001002D1833 /* Debug */,
+				D7C5D017182C5001002D1833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E80691182D658F00A2DA9E /* Build configuration list for PBXNativeTarget "Minion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E80692182D658F00A2DA9E /* Debug */,
+				D7E80693182D658F00A2DA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7E80694182D658F00A2DA9E /* Build configuration list for PBXNativeTarget "MinionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E80695182D658F00A2DA9E /* Debug */,
+				D7E80696182D658F00A2DA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7C5CFE7182C5001002D1833 /* Project object */;
+}
